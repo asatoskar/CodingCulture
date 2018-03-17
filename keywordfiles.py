@@ -5,7 +5,7 @@ for line in sys.stdin:
 	words = keywords.split(';')
 	name=link.split('/')[-1]
 	print('Creating '+name.strip()+'.txt')
-	file = open('txtfiles/'+name+'.txt','a')
+	file = open('txtfiles/'+name.strip()+'.txt','a')
 	for word in words:
 		word = word.strip()
 		file.write(word+'\n')
