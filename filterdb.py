@@ -3,12 +3,12 @@ import csv
 
 #function to find substring from a string between two given substrings
 def find_between( s, first, last ):
-    try:
-        start = s.index( first ) + len( first )
-        end = s.index( last, start )
-        return s[start:end]
-    except ValueError:
-        return ""
+	try:
+		start = s.index( first ) + len( first )
+		end = s.index( last, start )
+		return s[start:end]
+	except ValueError:
+		return ""
 
 #open file given at command line and remove only relevant links
 with open(sys.argv[1],'rb') as f:
