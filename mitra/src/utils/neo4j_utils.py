@@ -14,8 +14,8 @@ def create_tag_node(tag_name):
 	return Node("TAG", name=tag_name)
 
 
-def create_image_node(name, image_hash):
-	return Node("IMAGE", name=name, image_hash=image_hash)
+def create_image_node(name, image_hash, dom_colours):
+	return Node("IMAGE", name=name, hash=image_hash, colours=dom_colours)
 
 
 def create_image_tag_relationship(image_node, tag_node):
@@ -24,7 +24,7 @@ def create_image_tag_relationship(image_node, tag_node):
 
 def __main__():
 	conn = get_graph_connection()
-	img_node = create_image_node("dummy1", "hash1")
+	img_node = create_image_node("dummy1", "hash1", "cols1")
 	tag_node = create_tag_node("dummy")
 	rel = create_image_tag_relationship(img_node, tag_node)
 	conn.create(rel)
