@@ -15,8 +15,6 @@ Project for coding culture hackathon.
 
 ## Useful Links
 
-[NativeScript - Developing native JS mobile apps](https://docs.nativescript.org/)
-
 [Artistic Style Transfer - Excellent Neural Network Explanation](https://harishnarayanan.org/writing/artistic-style-transfer/)
 
 [pHash](https://www.phash.org/)
