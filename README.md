@@ -15,8 +15,6 @@ Project for coding culture hackathon.
 
 ## Useful Links
 
-[AR.js-Efficient AR for the web](https://jeromeetienne.github.io/AR.js/)
-
 [NativeScript - Developing native JS mobile apps](https://docs.nativescript.org/)
 
 [Artistic Style Transfer - Excellent Neural Network Explanation](https://harishnarayanan.org/writing/artistic-style-transfer/)
@@ -26,8 +24,6 @@ Project for coding culture hackathon.
 [DeepLearn.js](https://deeplearnjs.org/demos/mnist/mnist.html)
 
 [Neo4j for Python Web App With Flask](https://neo4j.com/blog/building-python-web-application-using-flask-neo4j/)
-
-[TensorFlow Classification with Multiple Tags](https://github.com/BartyzalRadek/Multi-label-Inception-net)
 
 [How Modification of Original Script Was Done](https://towardsdatascience.com/multi-label-image-classification-with-inception-net-cbb2ee538e30)
 
