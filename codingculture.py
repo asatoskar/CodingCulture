@@ -28,13 +28,14 @@ def upload():
 		file_path = os.path.join(app.config['UPLOADED_PATH'], f.filename)
 		f.save(file_path)
 		image_hash = get_image_hash(file_path)
-		# call predict here
+		tags = predict(file_path)
+		first_tag = list(tags.keys())[0]
 		image_node = create_image_node(name=str(f.filename), image_hash=str(image_hash))
-		tag_node = create_tag_node(tag_name="")  # Result of the prediction in tag name
+		tag_node = create_tag_node(tag_name=first_tag)  # Result of the prediction in tag name
 		image_tag_relationship = create_image_tag_relationship(image_node, tag_node)
 		conn.create(image_tag_relationship)
 	return render_template('index.html')
 
 
 if __name__ == '__main__':
-	app.run(debug=True)
+app.run(debug=True)
