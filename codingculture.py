@@ -28,6 +28,7 @@ def upload():
 		file_path = os.path.join(app.config['UPLOADED_PATH'], f.filename)
 		f.save(file_path)
 		tags = predict(file_path) #dictionary of predictions
+		first_tag = list(tags.keys())[0]
 		# image_node = create_image_node(name=f.filename, image_hash=get_image_hash(image_url=file_path))
 	# 	This is where you pass the file path for classification
 	return render_template('index.html')
