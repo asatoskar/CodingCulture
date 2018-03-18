@@ -2,9 +2,9 @@ import os
 
 from flask import Flask, render_template, request
 from flask_dropzone import Dropzone
-from mitra.src.utils.neo4j_utils import get_graph_connection, create_image_node, create_image_tag_relationship
+from mitra.src.utils.neo4j_utils import get_graph_connection, create_image_node, create_image_tag_relationship, create_tag_node
 from mitra.src.utils.image_utils import get_image_hash
-from classify_image import predict
+# from classify_image import predict
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -27,10 +27,12 @@ def upload():
 		f = request.files.get('file')
 		file_path = os.path.join(app.config['UPLOADED_PATH'], f.filename)
 		f.save(file_path)
-		tags = predict(file_path) #dictionary of predictions
-		first_tag = list(tags.keys())[0]
-		# image_node = create_image_node(name=f.filename, image_hash=get_image_hash(image_url=file_path))
-	# 	This is where you pass the file path for classification
+		image_hash = get_image_hash(file_path)
+		# call predict here
+		image_node = create_image_node(name=str(f.filename), image_hash=str(image_hash))
+		tag_node = create_tag_node(tag_name="")  # Result of the prediction in tag name
+		image_tag_relationship = create_image_tag_relationship(image_node, tag_node)
+		conn.create(image_tag_relationship)
 	return render_template('index.html')
 
 
