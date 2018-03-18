@@ -15,7 +15,7 @@ def create_tag_node(tag_name):
 
 
 def create_image_node(name, image_hash):
-	return Node("IMAGE", name=name, hash=image_hash)
+	return Node("IMAGE", name=name, image_hash=image_hash)
 
 
 def create_image_tag_relationship(image_node, tag_node):
