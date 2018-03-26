@@ -12,6 +12,8 @@ Project for coding culture hackathon.
 
 Clone the entire repository (the *webapp* subfolder is not currently required and will be used for future front-end development after Hackathon results are out)
 
+Create an *uploads* folder in the repository for the uploaded images.
+
 Create a 'model' subfolder in the repository and download the model from the Google Drive link and save it in this folder.
 
 **Setting up Neo4J Server**
