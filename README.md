@@ -8,6 +8,14 @@ Project for coding culture hackathon.
 
 ## Guide to Set Up And Use KHOJ
 
+**Setting up repository**
+
+Clone the entire repository (the *webapp* subfolder is not currently required and will be used for future front-end development after Hackathon results are out)
+
+Create a 'model' subfolder in the repository and download the model from the Google Drive link and save it in this folder.
+
+**Setting up Neo4J Server**
+
 Download the Neo4J Community Edition tarball from the official Neo4j Website and extract it to any directory.
 
 Navigate to the extracted folder and run the following command.
@@ -18,6 +26,7 @@ This will start the Neo4j Server
 
 Navigate to the Neo4J browser at *http://localhost:7474/browser/* and change the passsword from default 'neo4j' to 'password'.
 
+**Running the application**
 Open a new terminal window and run the codingculture.py file using
 
 `python3 codingculture.py`
