@@ -1,0 +1,14 @@
+Python libraries
+
+flask
+flask_dropzone
+numpy
+tensorflow
+py2neo
+os
+sklearn
+PIL
+imagehash
+
+
+A working Neo4J Server setup with default user 'neo4j' and password 'password'.
