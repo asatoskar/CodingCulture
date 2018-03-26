@@ -36,7 +36,7 @@ def get_domcolours(ipfile,swatchsize=200,numcolors=5): #pass path of I/P image
     for centre in centres:
         for i in range(len(centre)):
             centre[i]=int(centre[i])
-    return(','.join(centres))
+    return(','.join(str(centres)))
 
 def diffbetweencolors(color1,color2): #pass colors as numpy array ONLY, returns sum of elements of matrix of distances
 
