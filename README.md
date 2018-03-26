@@ -6,6 +6,23 @@ Project for coding culture hackathon.
 [google drive link](https://drive.google.com/open?id=18tzYWgoUXRSqt-iWVJfb4LhT_Xy6VPoz)
 
 
+## Guide to Set Up And Use KHOJ
+
+Download the Neo4J Community Edition tarball from the official Neo4j Website and extract it to any directory.
+
+Navigate to the extracted folder and run the following command.
+
+`./bin/neo4j console`
+
+This will start the Neo4j Server
+
+Navigate to the Neo4J browser at *http://localhost:7474/browser/* and change the passsword from default 'neo4j' to 'password'.
+
+Open a new terminal window and run the codingculture.py file using
+
+`python3 codingculture.py`
+
+CTRL+Click on the link in the terminal. Alternatively navigate to *http://127.0.0.1:5000/* to view the application in the Browser.
 
 ## Datasets
 
