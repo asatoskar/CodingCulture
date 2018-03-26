@@ -16,7 +16,7 @@ def get_hash_diff(hash1, hash2):
 
 
 
-def getdomcolours(ipfile,swatchsize=200,numcolors=5): #pass path of I/P image
+def get_domcolours(ipfile,swatchsize=200,numcolors=5): #pass path of I/P image
     maxval = 150
     image = Image.open(ipfile)
     width,height=image.size
