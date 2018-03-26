@@ -27,6 +27,7 @@ This will start the Neo4j Server
 Navigate to the Neo4J browser at *http://localhost:7474/browser/* and change the passsword from default 'neo4j' to 'password'.
 
 **Running the application**
+
 Open a new terminal window and run the codingculture.py file using
 
 `python3 codingculture.py`
